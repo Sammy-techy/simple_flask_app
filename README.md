@@ -21,13 +21,18 @@ Base Skeleton to start your application using python, flask, mysql and sqlalchem
 
 - Install it::
 
-	pip install flask
-  pip install python
-	git clone https://github.com/Sammy-techy/simple_flask_app.git
+pip install flask
+
+pip install python
+
+git clone https://github.com/Sammy-techy/simple_flask_app.git
+
 - Run it app.py
 
     $ export FLASK_APP=app
+    
     # Run dev server
+    
     $ app.py
 
 
