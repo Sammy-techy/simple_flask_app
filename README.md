@@ -7,3 +7,7 @@ configure your db using sqlalchemy orm
 open CLi and type app.py to run the code
 
 feel free to suggest or contact me @ aduoluwaseun@yahoo.com
+
+author = Adu Oluwaseun
+
+mentor = Ephraim Anierobi
