@@ -14,7 +14,7 @@ feel free to suggest or contact me @ aduoluwaseun@yahoo.com
 
 author = Adu Oluwaseun
 
-mentor = Ephraim Anierobi
+Senior software engr Ephraim Anierobi
 
 Base Skeleton to start your application using python, flask, mysql and sqlalchemy orm
 --------------------------------------------------------------
