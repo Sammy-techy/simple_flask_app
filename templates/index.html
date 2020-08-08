@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+<!-- NOTE word can be used to represent the "details"-->
+
+{% block content %}
+<div class="row justify-content-center" style="font-size: 15px;">
+    <div class="col-lg-11">
+        <div class="card">
+            <div class="card-title">
+                <h4>Student Data</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>S/N</th>
+                                <th>First_name</th>
+                                <th>Last_name</th>
+                                <th>Date Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for data in friendform %}
+                            <tr>
+                                <td scope="row">{{ loop.index }}</td>
+                                <td>{{ data ['first_name'] }}</td>
+                                <td>{{ data['last_name'] }}</span></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center" style="background-color: brown; padding: 0.5%;">
+    <div class="col-lg-11">
+        <div class="card">
+{% for all in posts %}
+<div class="row, px-3 py-3" style="max-width: 100%; background-color: rgb(252, 249, 250); ">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-title">
+                <h3 style="font-size: 25px;">{{ all['title'] }}</h3>
+                <h4 style="font-size: 15px;">{{ all['comment'] }}</h4>
+                <p style="font-size: 12px;"><img src="static/image/share.png" alt="share" style="width: 30px; height: 30px;">by Adu Oluwaseun at {{ all['created_time']|datetime }}</p>
+                <!--thesame details in the comment above is used here( same details in the form) -->
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+
+    </div>
+    </div>
+    </div>
+</body>
+{% endblock %}

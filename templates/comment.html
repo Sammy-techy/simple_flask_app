@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<div>
+
+    <form method="POST">
+        <div style="padding-left: 50%; margin-right: 20%;">
+            <textarea class="form-control" name="title" placeholder="Title" required></textarea>
+        </div>
+        <div>
+        <textarea class="form-control" name="comment" placeholder="Enter a comment" required></textarea>
+        <input type="submit" class="btn btn-success color: brown;" value="submit comment">
+        </div>
+    </form>
+</div>
+{% endblock%}
+

@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head style="background-color: bisque; text-align: center;">
+        {% block title%}
+            <title>Sammy's Blog</title>
+        {% endblock %}
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body style="background-color: brown; padding: 0.5%;">
+
+    <!-- nav -->
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+        <a class="my-0 mr-md-auto font-weight-normal btn btn-lg btn-primary" href="/" style="max-width: 700px; background-color: rgb(230, 16, 16); font-size: 25px;">Student List</a>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="btn {% if nav == 'start' %} btn-outline-primary {% else %} btn-outline-fix text-dark {% endif %}"
+                href="/" style="font-size: 13px;">Home</a>
+            <a class="btn {% if nav == 'top' %} btn-outline-primary {% else %} btn-outline-fix  text-dark {% endif %}"
+                href="/comment" style="font-size: 13px;">Post comment</a>
+            <a class="btn {% if nav == 'restaurant' %} btn-outline-primary {% else %} btn-outline-fix text-dark {% endif %}"
+                href="/add_friend" style="font-size: 13px;">Add Friend</a>
+            <a class="btn {% if nav == 'history' %} btn-outline-primary {% else %} btn-outline-fix text-dark {% endif %}"
+                href="/forum" style="font-size: 13px;">Forum</a>
+        </nav>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+</html>
